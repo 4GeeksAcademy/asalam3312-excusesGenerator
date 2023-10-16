@@ -23,15 +23,8 @@ let theExcuse = () => {
   let whatOption = Math.floor(Math.random() * what.length);
   let whenOption = Math.floor(Math.random() * when.length);
 
-  return (
-    who[whoOption] +
-    "" +
-    action[actionOption] +
-    "" +
-    what[whatOption] +
-    "" +
-    when[whenOption]
-  );
+  return `${who[whoOption]} ${action[actionOption]} ${what[whatOption]} ${when[whenOption]}`;
+  //who[whoOption] + "" + action[actionOption] + "" + what[whatOption] + "" + when[whenOption]
 };
 
 window.onload = () => {
